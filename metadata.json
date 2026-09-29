@@ -1,0 +1,6 @@
+{
+  "name": "GitArmor AI — DevSecOps & Automated Code Remediation",
+  "description": "Autonomous AI-powered DevSecOps platform and security audit engine. Real-time vulnerability scanning, hybrid SAST with Gemini, surgical PR auto-remediation, and GitHub Actions integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

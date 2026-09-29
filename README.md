@@ -1,32 +1,44 @@
 <div align="center">
 
-<img src="public/logo.svg" alt="GitArmor AI Logo" width="88" height="88" />
+<br />
+
+<img src="public/logo.svg" alt="GitArmor AI — Autonomous DevSecOps Platform" width="96" height="96" />
+
+<br />
+<br />
 
 # GitArmor AI
 
 ### Autonomous DevSecOps & Precision Code Remediation Engine
 
-**Deterministic AST Parsing · Contextual Gemini 2.5 Reasoning · 1-Click Surgical Pull Requests**
+*Deterministic AST Parsing · Contextual Gemini 2.5 Reasoning · 1-Click Surgical Pull Requests*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](LICENSE)
-[![Release](https://img.shields.io/badge/Release-v2.5.0-blue.svg)]()
-[![Model](https://img.shields.io/badge/AI%20Engine-Gemini%202.5%20Flash-violet.svg)]()
-[![Standards](https://img.shields.io/badge/Security%20Standards-OWASP%20%7C%20CWE%20%7C%20SOC%202-amber.svg)]()
-[![Privacy](https://img.shields.io/badge/Data%20Retention-Zero%20Code%20Stored-success.svg)]()
-[![Pricing](https://img.shields.io/badge/Pricing-100%25%20Free%20%26%20Open%20Source-teal.svg)]()
+<br />
 
-[Explore Overview](http://localhost:3000) · [Launch Audit Service](http://localhost:3000/audit) · [Security Dashboard](http://localhost:3000/dashboard) · [Documentation](#-table-of-contents)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square&logo=opensourceinitiative&logoColor=white)](LICENSE)
+[![Version](https://img.shields.io/badge/Release-v2.5.0-6366f1?style=flat-square&logo=github&logoColor=white)](https://github.com/Bavly-Hamdy/gitarmor-ai/releases)
+[![AI Engine](https://img.shields.io/badge/AI%20Engine-Gemini%202.5%20Flash-a855f7?style=flat-square&logo=google&logoColor=white)](https://aistudio.google.com/)
+[![Standards](https://img.shields.io/badge/Standards-OWASP%20%7C%20CWE%20%7C%20SOC%202-f59e0b?style=flat-square&logo=owasp&logoColor=white)](https://owasp.org)
+[![Privacy](https://img.shields.io/badge/Data%20Retention-Zero%20Code%20Stored-14b8a6?style=flat-square)]()
+[![Free](https://img.shields.io/badge/Pricing-100%25%20Free%20%26%20Open%20Source-0ea5e9?style=flat-square)]()
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-ec4899?style=flat-square&logo=github-actions&logoColor=white)](https://github.com/Bavly-Hamdy/gitarmor-ai/pulls)
+
+<br />
+
+[**Overview**](http://localhost:3000) &nbsp;&middot;&nbsp; [**Launch Audit**](http://localhost:3000/audit) &nbsp;&middot;&nbsp; [**Dashboard**](http://localhost:3000/dashboard) &nbsp;&middot;&nbsp; [**Documentation**](#-table-of-contents)
+
+<br />
 
 </div>
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [Overview & Mission](#-overview--mission)
 - [The DevSecOps Paradigm Shift](#-the-devsecops-paradigm-shift)
 - [Platform Walkthrough & Screenshots](#-platform-walkthrough--screenshots)
-- [How GitArmor Works: 4-Phase Pipeline](#-how-gitarmor-works-4-phase-pipeline)
+- [How GitArmor Works: The 4-Phase Pipeline](#-how-gitarmor-works-the-4-phase-pipeline)
 - [The Artifact Trinity](#-the-artifact-trinity)
 - [Interactive Vulnerability & Patch Simulator](#-interactive-vulnerability--patch-simulator)
 - [Core Security Capabilities](#-core-security-capabilities)
@@ -34,125 +46,142 @@
 - [Security & Zero Code Retention Guarantee](#-security--zero-code-retention-guarantee)
 - [Architecture & Tech Stack](#-architecture--tech-stack)
 - [Local Setup & Quickstart Guide](#-local-setup--quickstart-guide)
+- [Environment Variables Reference](#-environment-variables-reference)
 - [API Reference & System Endpoints](#-api-reference--system-endpoints)
+- [Screenshot Automation](#-screenshot-automation)
 - [Contributing & Open-Source Policy](#-contributing--open-source-policy)
 - [License](#-license)
 
 ---
 
-## 🛡️ Overview & Mission
+## Overview & Mission
 
-**GitArmor AI** is an enterprise-grade, autonomous DevSecOps and automated code remediation platform engineered to eliminate alert fatigue and compress vulnerability resolution time (**MTTR**) from weeks to seconds.
+**GitArmor AI** is an **enterprise-grade, autonomous DevSecOps and automated code remediation platform** engineered to eliminate alert fatigue and compress vulnerability resolution time (**MTTR**) from weeks to seconds.
 
-Traditional Static Application Security Testing (SAST) tools overwhelm engineering squads with noisy, uncontextualized alerts—over 70% of which are false alarms. Worse, they leave the grueling burden of diagnosing exploitability and crafting code patches entirely on exhausted developers.
+Traditional Static Application Security Testing (SAST) tools overwhelm engineering squads with noisy, uncontextualized alerts — over **70% of which are false alarms**. Worse, they leave the grueling burden of diagnosing exploitability and crafting code patches entirely on exhausted developers.
 
-GitArmor AI bridges this gap through a **two-stage verification pipeline**:
-1. **Deterministic AST & Taint Analysis**: Rapidly maps Abstract Syntax Trees across multi-language codebases (TypeScript, JavaScript, Python, Go, Java, Rust) to identify dataflow sources and sinks.
-2. **Contextual AI Reasoning**: Leverages **Google Gemini 2.5 Flash** with an expansive context window to evaluate cross-file sanitizers, authorization boundaries, and control-flow branches, achieving a **94%+ false-positive reduction**.
-3. **Autonomous Surgical Remediation**: Automatically synthesizes unified diff patches, spawns isolated Git branches (`gitarmor/fix-*`), and submits review-ready GitHub Pull Requests without touching production or protected `main` branches.
-4. **100% Free & Open Source**: Zero subscription gates, zero paywalls. Engineered for developers, security architects, and open-source maintainers worldwide.
+GitArmor AI bridges this gap through a **unified, four-phase verification pipeline**:
+
+> **Phase 1 — AST & Taint Analysis:** Rapidly maps Abstract Syntax Trees across multi-language codebases to identify dataflow sources, sinks, and control-flow branches.
+
+> **Phase 2 — Contextual AI Reasoning:** Leverages **Google Gemini 2.5 Flash** to evaluate cross-file sanitizers and authorization boundaries, achieving a **94%+ false-positive reduction**.
+
+> **Phase 3 — Artifact Trinity Generation:** Synthesizes three synchronized documentation artifacts for both human reviewers and automated CI/CD pipelines.
+
+> **Phase 4 — Autonomous Surgical PR Dispatch:** Automatically synthesizes unified diff patches, spawns isolated Git branches (`gitarmor/fix-*`), and submits review-ready GitHub Pull Requests.
+
+> **100% Free & Open Source.** Zero subscription gates, zero paywalls, zero telemetry.
 
 ---
 
-## ⚡ The DevSecOps Paradigm Shift
+## The DevSecOps Paradigm Shift
 
-| Feature / Metric | Traditional SAST (SonarQube, Snyk, Semgrep) | GitArmor AI Platform |
+| Capability | Traditional SAST Tools | **GitArmor AI** |
 | :--- | :--- | :--- |
-| **Detection Method** | Pattern matching & rigid regex rules | Deterministic AST + Deep Contextual AI Reasoning |
-| **False Positive Rate** | **High (> 70%)**; flags sanitized variables & test fixtures | **Extremely Low (< 6%)**; verifies end-to-end dataflow exploitability |
-| **Remediation Action** | Generates voluminous PDF/JSON compliance backlogs | Generates atomic, surgical Git patches & Pull Requests |
-| **Time-to-Remediate (MTTR)** | **14 - 30 Days** of manual developer investigation | **< 60 Seconds** automated patch synthesis & PR dispatch |
-| **Secret Protection** | Leaks plaintext credentials directly in log files | Automatic regex token masking & cryptographic redaction |
-| **Branch Safety** | Risky local scripts or manual commits | Enforced **Protected Branch Invariant** (`gitarmor/fix-*` only) |
-| **Automation Artifacts** | Monolithic text reports | **The Artifact Trinity** (Report Markdown + Plan YAML + Agent Prompt) |
-| **Cost & Licensing** | Prohibitive seat-based enterprise licensing | **100% Free & Open-Source (MIT)** |
+| **Detection Method** | Pattern matching & rigid regex rules | Deterministic AST + Contextual AI Reasoning |
+| **False Positive Rate** | **High (> 70%)** | **Extremely Low (< 6%)** |
+| **Remediation Action** | Voluminous PDF/JSON backlog reports | Atomic, surgical Git patches & Pull Requests |
+| **Time-to-Remediate (MTTR)** | **14-30 Days** of manual investigation | **< 60 Seconds** automated patch synthesis |
+| **Secret Protection** | Leaks plaintext credentials in logs | Automatic regex token masking & cryptographic redaction |
+| **Branch Safety** | Risky local scripts or manual commits | Enforced **Protected Branch Invariant** |
+| **Automation Artifacts** | Monolithic text reports | **The Artifact Trinity** (Report + Plan + Agent Prompt) |
+| **Cost & Licensing** | Prohibitive enterprise seat-based pricing | **100% Free & Open-Source (MIT)** |
 
 ---
 
-## 📸 Platform Walkthrough & Screenshots
+## Platform Walkthrough & Screenshots
 
-### 1. Minimalist Overview & Hero Section
-> Designed under modern humanized minimalism with high-fidelity dark and light mode adaptation. Features the GitArmor vector emblem, high-impact value proposition, and instant routing to the dedicated scanning cockpit.
+### 1 - Minimalist Hero & Overview
+
+> Designed under humanized minimalism with high-fidelity dark and light mode support. Features the GitArmor emblem, a high-impact value proposition, and instant routing to the dedicated scanning cockpit.
 
 <div align="center">
-  <img src="public/screenshots/01_hero_overview.png" alt="GitArmor AI Hero Overview" width="95%" style="border-radius: 12px; border: 1px solid #27272a;" />
+  <img src="public/screenshots/01_hero_overview.png" alt="GitArmor AI Hero Overview" width="95%" style="border-radius:12px;border:1px solid #27272a;" />
 </div>
 
 ---
 
-### 2. The DevSecOps Paradigm Shift Comparison
-> Visual contrast matrix illustrating how GitArmor transforms noisy legacy alert backlogs into automated, high-signal DevSecOps velocity.
+### 2 - The Paradigm Shift Comparison Matrix
+
+> Visual contrast table illustrating how GitArmor transforms noisy legacy alert backlogs into automated, high-signal DevSecOps velocity.
 
 <div align="center">
-  <img src="public/screenshots/02_paradigm_shift.png" alt="Paradigm Shift Comparison" width="95%" style="border-radius: 12px; border: 1px solid #27272a;" />
+  <img src="public/screenshots/02_paradigm_shift.png" alt="Paradigm Shift Comparison" width="95%" style="border-radius:12px;border:1px solid #27272a;" />
 </div>
 
 ---
 
-### 3. The 4-Phase Autonomous Pipeline Architecture
-> Comprehensive breakdown of the end-to-end execution flow: Ephemeral AST Ingestion, Gemini Contextual Reasoning, Artifact Trinity Generation, and Atomic PR Dispatch.
+### 3 - The 4-Phase Autonomous Pipeline Architecture
+
+> End-to-end execution flow: Ephemeral AST Ingestion -> Gemini Contextual Reasoning -> Artifact Trinity Generation -> Atomic PR Dispatch.
 
 <div align="center">
-  <img src="public/screenshots/03_pipeline_architecture.png" alt="4-Phase Pipeline Architecture" width="95%" style="border-radius: 12px; border: 1px solid #27272a;" />
+  <img src="public/screenshots/03_pipeline_architecture.png" alt="4-Phase Pipeline Architecture" width="95%" style="border-radius:12px;border:1px solid #27272a;" />
 </div>
 
 ---
 
-### 4. Interactive Vulnerability & Live Patch Simulator
-> An interactive testing sandbox directly on the Overview page allowing engineers to inspect real CVE attack vectors (SQLi, Exposed Cloud Keys, SSRF), review surgical before/after diffs, and read AI security reasoning.
+### 4 - Interactive Vulnerability & Live Patch Simulator
+
+> A live testing sandbox allowing engineers to inspect real CVE attack vectors (SQLi, Exposed Cloud Keys, SSRF), review surgical before/after diffs, and read AI security reasoning.
 
 <div align="center">
-  <img src="public/screenshots/04_patch_simulator.png" alt="Interactive Patch Simulator" width="95%" style="border-radius: 12px; border: 1px solid #27272a;" />
+  <img src="public/screenshots/04_patch_simulator.png" alt="Interactive Patch Simulator" width="95%" style="border-radius:12px;border:1px solid #27272a;" />
 </div>
 
 ---
 
-### 5. Repository Security Telemetry & Live Compliance Posture
-> Real-time security operations telemetry grounded in actual scan findings: Severity distributions, secret exposure counters, verified auditor identity (`@Bavly-Hamdy`), and automated OWASP / SOC 2 / PCI-DSS posture meters.
+### 5 - Security Telemetry & Live Compliance Posture
+
+> Real-time security operations telemetry: severity distributions, secret exposure counters, verified auditor identity, and automated OWASP / SOC 2 / PCI-DSS posture meters.
 
 <div align="center">
-  <img src="public/screenshots/05_security_telemetry.png" alt="Security Telemetry and Compliance" width="95%" style="border-radius: 12px; border: 1px solid #27272a;" />
+  <img src="public/screenshots/05_security_telemetry.png" alt="Security Telemetry and Compliance" width="95%" style="border-radius:12px;border:1px solid #27272a;" />
 </div>
 
 ---
 
-### 6. Dedicated Security Audit Service Cockpit (`/audit`)
-> A focused, distraction-free environment for connecting public or private GitHub repositories, configuring scan depth, and initiating isolated ephemeral AST scans.
+### 6 - Dedicated Security Audit Cockpit (/audit)
+
+> A focused, distraction-free environment for connecting GitHub repositories, configuring scan depth, and initiating isolated ephemeral AST scans.
 
 <div align="center">
-  <img src="public/screenshots/06_audit_service.png" alt="Dedicated Audit Service Cockpit" width="95%" style="border-radius: 12px; border: 1px solid #27272a;" />
+  <img src="public/screenshots/06_audit_service.png" alt="Dedicated Audit Service Cockpit" width="95%" style="border-radius:12px;border:1px solid #27272a;" />
 </div>
 
 ---
 
-### 7. Interactive Security Audit Dashboard (`/dashboard`)
-> The core operational center featuring real-time health Score Gauges (0–100), multi-dimensional finding filters (CWE, OWASP, Severity, Category), search autocomplete, and deep finding inspections.
+### 7 - Interactive Security Audit Dashboard (/dashboard)
+
+> The core operational center: real-time health score gauges (0-100), multi-dimensional finding filters (CWE, OWASP, Severity, Category), search autocomplete, and deep finding inspections.
 
 <div align="center">
-  <img src="public/screenshots/07_security_dashboard.png" alt="Interactive Security Dashboard" width="95%" style="border-radius: 12px; border: 1px solid #27272a;" />
+  <img src="public/screenshots/07_security_dashboard.png" alt="Interactive Security Dashboard" width="95%" style="border-radius:12px;border:1px solid #27272a;" />
 </div>
 
 ---
 
-### 8. Precision Code Diff Viewer & Surgical PR Manager
+### 8 - Precision Code Diff Viewer & Surgical PR Manager
+
 > Side-by-side unified diff inspector displaying vulnerable lines vs. remediated syntax, with 1-click GitHub Pull Request dispatch to isolated branches.
 
 <div align="center">
-  <img src="public/screenshots/08_remediation_diff.png" alt="Surgical Code Diff Viewer" width="95%" style="border-radius: 12px; border: 1px solid #27272a;" />
+  <img src="public/screenshots/08_remediation_diff.png" alt="Surgical Code Diff Viewer" width="95%" style="border-radius:12px;border:1px solid #27272a;" />
 </div>
 
 ---
 
-### 9. The Artifact Trinity Exporter
-> Unified modal generating human-readable audit summaries (`security-report.md`), machine-executable automation recipes (`plan.yaml`), and AI agent prompts (`agent-prompt.txt`).
+### 9 - The Artifact Trinity Exporter
+
+> Unified modal generating human-readable audit summaries, machine-executable automation recipes, and AI agent prompts.
 
 <div align="center">
-  <img src="public/screenshots/09_artifact_trinity.png" alt="Artifact Trinity Modal" width="95%" style="border-radius: 12px; border: 1px solid #27272a;" />
+  <img src="public/screenshots/09_artifact_trinity.png" alt="Artifact Trinity Modal" width="95%" style="border-radius:12px;border:1px solid #27272a;" />
 </div>
 
 ---
 
-## 🔄 How GitArmor Works: 4-Phase Pipeline
+## How GitArmor Works: The 4-Phase Pipeline
 
 ```mermaid
 graph LR
@@ -163,202 +192,233 @@ graph LR
     E -->|gitarmor/fix-*| F[GitHub Pull Request]
 ```
 
-### Phase 01: Ephemeral Ingestion & AST Tree Parsing
-- Repositories are cloned directly into sandboxed, temporary in-memory storage.
-- Tree-sitter and AST parsers construct call graphs, function boundaries, and import trees.
-- Sources of untrusted input (HTTP request bodies, URL params, headers) and sensitive sinks (SQL queries, system calls, filesystem I/O, outbound network requests) are cataloged.
+<br />
 
-### Phase 02: Contextual Gemini 2.5 Deep Reasoning
-- Cross-file dataflow graphs are submitted to Gemini 2.5 Flash alongside contextual middleware and sanitizer logic.
-- Verifies whether a data path is vulnerable to exploitation or rendered harmless by existing defensive sanitizers.
-- Maps confirmed vulnerabilities to standard **CWE** (Common Weakness Enumeration) indices and **OWASP Top 10 (2021)** classifications.
+**Phase 01 - Ephemeral Ingestion & AST Tree Parsing**
 
-### Phase 03: The Artifact Trinity Generation
-- Synthesizes three synchronized, standardized artifacts for both human engineers and automated CI/CD agents.
+Repositories are cloned into sandboxed, temporary in-memory storage with zero disk persistence. A multi-language Tree-sitter AST parser constructs call graphs, function boundaries, and import dependency trees. Sources of untrusted input (HTTP request bodies, URL parameters, headers) and sensitive sinks (SQL query builders, system shell calls, filesystem I/O, outbound network requests) are catalogued and indexed.
 
-### Phase 04: One-Click Atomic Pull Request Dispatch
-- Creates a dedicated remediation branch (`gitarmor/fix-{finding-id}-{timestamp}`).
-- Applies the verified unified diff patch.
-- Dispatches a GitHub Pull Request via the GitHub REST API under the authenticated developer's verified identity.
-- Enforces the **Protected Branch Invariant**: Direct pushes to `main`, `master`, or release branches are strictly prohibited.
+**Phase 02 - Contextual Gemini 2.5 Deep Reasoning**
+
+Cross-file dataflow graphs are submitted to **Gemini 2.5 Flash** alongside the full context of middleware, sanitizers, and authorization gate logic. The model evaluates whether each potential vulnerability can actually be exploited given the real code context, versus being neutralized by existing defenses. Every confirmed finding is mapped to its canonical **CWE** index and **OWASP Top 10 (2021)** classification.
+
+**Phase 03 - The Artifact Trinity Generation**
+
+Three synchronized, standardized artifacts are synthesized in parallel. They are designed to serve both human engineering reviewers and automated CI/CD pipelines simultaneously, eliminating manual translation between human and machine-readable formats.
+
+**Phase 04 - One-Click Atomic Pull Request Dispatch**
+
+A dedicated remediation branch (`gitarmor/fix-{finding-id}-{timestamp}`) is created. The verified unified diff patch is applied surgically. A fully documented GitHub Pull Request is dispatched via the GitHub REST API. The **Protected Branch Invariant** is enforced at all times — direct pushes to `main`, `master`, or any release branch are strictly prohibited.
 
 ---
 
-## 📜 The Artifact Trinity
+## The Artifact Trinity
 
-GitArmor AI pioneered the **Artifact Trinity**—a synchronized tri-factor documentation standard designed for both human review and automated agent consumption:
+GitArmor AI pioneered the **Artifact Trinity** — a synchronized tri-factor documentation standard designed for both human review and automated agent consumption:
 
 ```
-├── artifacts/
-│   ├── security-report.md     # Human Executive & Engineering Audit Report
-│   ├── plan.yaml              # Machine-Readable Remediation Workflow for CI/CD
-│   └── agent-prompt.txt       # Context-Dense Prompt for Autonomous Coding Agents
+artifacts/
+├── security-report.md      # Human Executive & Engineering Audit Report
+├── remediation-plan.yaml   # Machine-Readable Remediation Workflow for CI/CD
+└── agent-prompt.txt        # Context-Dense Prompt for Autonomous Coding Agents
 ```
 
-### 1. `security-report.md`
-A comprehensive, human-readable audit summary formatted in clean GitHub-Flavored Markdown. Includes an executive score gauge, vulnerability inventory, affected file paths, line ranges, and reproduction steps.
+<br />
 
-### 2. `remediation-plan.yaml`
-A deterministic, machine-executable schema detailing step-by-step patch instructions, prerequisite dependencies, target branches, verification commands, and rollback strategies for integration with GitHub Actions, GitLab CI, or Jenkins.
+**security-report.md** — A comprehensive, human-readable audit summary in clean GitHub-Flavored Markdown. Includes an executive health score gauge, full vulnerability inventory, affected file paths with exact line ranges, severity ratings, and reproduction steps.
 
-### 3. `agent-prompt.txt`
-A curated prompt containing precise vulnerability context, code snippets, architectural constraints, and formatting guidelines—optimized for immediate ingestion by autonomous coding agents (Claude 3.7, Gemini 2.5, GPT-4o, Cursor, or Aider).
+**remediation-plan.yaml** — A deterministic, machine-executable schema detailing step-by-step patch instructions, prerequisite dependencies, target branches, verification commands, and rollback strategies. Natively compatible with GitHub Actions, GitLab CI, Jenkins, and CircleCI.
 
----
-
-## 🧪 Interactive Vulnerability & Patch Simulator
-
-GitArmor features a live patch simulation engine modeling common real-world security vulnerabilities:
-
-### 1. SQL Injection (CWE-89 / OWASP A03)
-* **Vulnerable Pattern**: Raw string concatenation into SQL query buffers (`db.query("SELECT * FROM users WHERE email = '" + email + "'")`).
-* **Surgical Remediation**: Introduction of prepared statements with parameterized binds (`db.query("SELECT * FROM users WHERE email = $1", [email])`).
-* **Result**: Complete neutralization of arbitrary SQL interpolation.
-
-### 2. Hardcoded Production Credentials (CWE-798 / OWASP A07)
-* **Vulnerable Pattern**: Static AWS access keys or Stripe secret tokens committed to source code (`const AWS_KEY = "AKIAIOSFODNN7EXAMPLE"`).
-* **Surgical Remediation**: Automated pattern-based masking in audit logs (`[REDACTED_AWS_KEY]`) and extraction to validated environment variables (`process.env.AWS_ACCESS_KEY_ID!`).
-* **Result**: Eradicates credential leakage from version control history.
-
-### 3. Server-Side Request Forgery / SSRF (CWE-918 / OWASP A10)
-* **Vulnerable Pattern**: Direct outbound `fetch(req.body.url)` exposing cloud instance metadata endpoints (`http://169.254.169.254/`).
-* **Surgical Remediation**: Domain allowlisting, protocol whitelisting, and strict RFC1918 private subnet rejection wrapper.
-* **Result**: Prohibits internal network pivoting and cloud credential harvesting.
+**agent-prompt.txt** — A curated prompt containing precise vulnerability context, code snippets, architectural constraints, and output formatting guidelines — optimized for Gemini 2.5, Claude 3.7 Sonnet, GPT-4o, Cursor, and Aider.
 
 ---
 
-## 🎯 Core Security Capabilities
+## Interactive Vulnerability & Patch Simulator
 
-- **SAST (Static Application Security Testing)**: Comprehensive source code vulnerability scanning across TypeScript, JavaScript, Python, Go, and Java.
-- **Automated Secret Redaction**: Real-time cryptographic masking of API keys, JWT secrets, database connection URIs, and private RSA keys before external transmission.
-- **SCA (Software Composition Analysis)**: Dependency supply-chain vulnerability detection and outdated package CVE auditing.
-- **IaC (Infrastructure-as-Code) Scanning**: Misconfiguration auditing across Dockerfiles, Kubernetes manifests, and Terraform files.
-- **Local AST Resilience**: Dual-mode scanning engine with built-in heuristic fallback ensuring audit functionality even during offline or network-constrained states.
-- **Multi-Tenant Workspace Support**: Manage multi-repository organization workspaces with isolated role-based permissions (Owner, Admin, DevSecOps, Developer).
+GitArmor features a live patch simulation engine modeling the most common real-world security vulnerabilities:
+
+### SQL Injection - CWE-89 / OWASP A03:2021
+
+```diff
+- db.query("SELECT * FROM users WHERE email = '" + email + "'")
++ db.query("SELECT * FROM users WHERE email = $1", [email])
+```
+
+Raw string concatenation into SQL query buffers is replaced with parameterized prepared statements. This completely neutralizes arbitrary SQL interpolation and prevents privilege escalation through query manipulation.
 
 ---
 
-## 🏛️ Enterprise Standards & Compliance Mapping
+### Hardcoded Production Credentials - CWE-798 / OWASP A07:2021
 
-GitArmor AI automatically cross-references every finding against leading global cybersecurity standards:
+```diff
+- const AWS_KEY = "AKIAIOSFODNN7EXAMPLE"
++ const AWS_KEY = process.env.AWS_ACCESS_KEY_ID!
+```
 
-| Standard | Scope & Coverage | Verification Status |
+Static AWS access keys, Stripe secret tokens, and JWT signing secrets committed to source code are automatically detected, masked in audit logs as `[REDACTED_AWS_KEY]`, and extracted to validated environment variables.
+
+---
+
+### Server-Side Request Forgery / SSRF - CWE-918 / OWASP A10:2021
+
+```diff
+- const response = await fetch(req.body.url)
++ const response = await fetch(validateAndAllowlistUrl(req.body.url))
+```
+
+Direct outbound `fetch()` using user-controlled URLs exposes cloud instance metadata endpoints (`http://169.254.169.254/`). GitArmor applies domain allowlisting, strict protocol whitelisting, and RFC 1918 private subnet rejection.
+
+---
+
+## Core Security Capabilities
+
+- **SAST (Static Application Security Testing)** — Comprehensive source code vulnerability scanning across TypeScript, JavaScript, Python, Go, Java, and Rust.
+- **Automated Secret Redaction** — Real-time cryptographic masking of API keys, JWT secrets, database URIs, and private RSA/ECDSA keys before external AI transmission.
+- **SCA (Software Composition Analysis)** — Dependency supply-chain vulnerability detection and outdated package CVE auditing against the National Vulnerability Database.
+- **IaC (Infrastructure-as-Code) Scanning** — Misconfiguration auditing across Dockerfiles, Kubernetes manifests, and Terraform HCL files.
+- **Local AST Resilience** — Dual-mode scanning engine with built-in heuristic fallback ensuring audit functionality in offline environments.
+- **Multi-Tenant Workspace Support** — Manage multi-repository organization workspaces with isolated role-based permissions (Owner, Admin, DevSecOps, Developer).
+- **Protected Branch Invariant** — Strict enforcement preventing direct writes to `main`, `master`, or tagged release branches.
+
+---
+
+## Enterprise Standards & Compliance Mapping
+
+| Standard | Scope & Coverage | Automation Level |
 | :--- | :--- | :--- |
-| **OWASP Top 10 (2021)** | A01 Broken Access Control to A10 SSRF | Automated categorization & score mapping |
-| **CWE/SANS Top 25** | Most dangerous software vulnerabilities (CWE-89, CWE-79, CWE-798, etc.) | Direct CWE ID tag & remediation rationale |
-| **SOC 2 Type II** | Security, Confidentiality, and Processing Integrity | Ephemeral runner isolation & data encryption in transit |
+| **OWASP Top 10 (2021)** | A01 Broken Access Control through A10 SSRF | Automated categorization & posture score |
+| **CWE / SANS Top 25** | Most dangerous software weaknesses (CWE-89, CWE-79, CWE-798, CWE-918, etc.) | Direct CWE ID tagging & remediation rationale |
+| **SOC 2 Type II** | Security, Confidentiality, Availability, and Processing Integrity | Ephemeral runner isolation & encryption in transit |
 | **PCI-DSS 4.0** | Cardholder data & payment key protection | Automatic token masking and injection barrier verification |
+| **ISO/IEC 27001** | Information security management baseline | Secret redaction, access control enforcement |
 
 ---
 
-## 🔒 Security & Zero Code Retention Guarantee
+## Security & Zero Code Retention Guarantee
 
 GitArmor AI was architected from inception around a strict **Zero-Trust & Zero Code Retention** philosophy:
 
-1. **Ephemeral Sandboxed Execution**: Repositories are cloned to in-memory ephemeral scratch volumes and pruned immediately following audit completion.
-2. **Zero Model Training**: Customer code is **never** used to train, fine-tune, or evaluate public or private AI models.
-3. **Client-Side Secret Masking**: Credentials and sensitive tokens are obfuscated at the runtime boundary before transmission to AI reasoning layers.
-4. **Protected Branch Invariant**: GitArmor enforces read-only access on default branches (`main`/`master`). All proposed remediation diffs are submitted through isolated pull requests requiring human review.
-5. **No Long-Term Storage**: No customer source code files are permanently retained on disk or databases.
+1. **Ephemeral Sandboxed Execution** — Repositories are cloned to in-memory ephemeral scratch volumes and pruned immediately following audit completion. No code persists to disk.
+2. **Zero Model Training** — Customer code is **never** used to train, fine-tune, or evaluate any public or private AI model.
+3. **Client-Side Secret Masking** — Credentials and sensitive tokens are obfuscated at the runtime boundary **before** transmission to any AI reasoning layer.
+4. **Protected Branch Invariant** — GitArmor enforces read-only access on default branches. All proposed remediation diffs require explicit human review via Pull Request.
+5. **No Long-Term Storage** — No customer source code files are permanently retained on disk or in any database beyond the ephemeral scan session.
 
 ---
 
-## 💻 Architecture & Tech Stack
+## Architecture & Tech Stack
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                      Client Layer                           │
-│  Next.js 14 App Router · React 18 · TypeScript · Vite 8     │
-│  Tailwind CSS · Framer Motion · Lucide Icons · Dark/Light   │
-└──────────────────────────────┬──────────────────────────────┘
-                               │ HTTPS / JSON REST API
-┌──────────────────────────────▼──────────────────────────────┐
-│                      Backend Server                         │
-│  Node.js Full-Stack Server (server.ts) · TSX Runtime        │
-│  Dual-Engine DB: Cloud Firestore + Local JSON Fallback      │
-└──────────────────────────────┬──────────────────────────────┘
-                               │ AST & Taint Payloads
-┌──────────────────────────────▼──────────────────────────────┐
-│                    DevSecOps AI Engine                      │
-│  Google Gemini 2.5 Flash · Tree-sitter Multi-Language AST   │
-│  Automated Regex Redactor · GitHub REST API Branch Manager  │
-└─────────────────────────────────────────────────────────────┘
++--------------------------------------------------------------+
+|                        Client Layer                          |
+|    React 18 . Vite 8 . TypeScript . Tailwind CSS             |
+|    Framer Motion . Lucide Icons . Dark / Light Mode          |
++--------------------------------------------------------------+
+|                    HTTPS / JSON REST API                     |
++--------------------------------------------------------------+
+|                       Backend Server                         |
+|    Node.js . Express . TSX Runtime . server.ts               |
+|    Dual-Engine DB: Cloud Firestore + Local JSON Fallback     |
++--------------------------------------------------------------+
+|                    AST & Taint Payloads                      |
++--------------------------------------------------------------+
+|                    DevSecOps AI Engine                       |
+|    Google Gemini 2.5 Flash . Tree-sitter Multi-Language AST  |
+|    Automated Regex Redactor . GitHub REST API Manager        |
++--------------------------------------------------------------+
 ```
 
-- **Frontend**: React 18, Vite 8, TypeScript, Tailwind CSS, Lucide Icons, Plus Jakarta Sans & JetBrains Mono typography.
-- **Backend**: Node.js, Express, TSX, Dual-Engine Persistence (`data/gitarmor_db.json` local JSON + Google Cloud Firestore connector).
-- **Security Engine**: Google Gemini 2.5 Flash API, AST Dataflow Analysis, Gitleaks pattern heuristics.
-- **Testing & Screenshot Automation**: Playwright, Python 3, Jest.
+<br />
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend** | React 18, Vite 8, TypeScript, Tailwind CSS, Framer Motion, Lucide Icons |
+| **Typography** | Plus Jakarta Sans (UI), JetBrains Mono (Code) |
+| **Backend** | Node.js, Express, TSX, Dual-Engine Persistence (JSON + Firestore) |
+| **AI Engine** | Google Gemini 2.5 Flash API, AST Dataflow Analysis, Gitleaks heuristics |
+| **Automation** | Playwright (Python 3), Jest, GitHub REST API |
 
 ---
 
-## 🚀 Local Setup & Quickstart Guide
+## Local Setup & Quickstart Guide
 
-### 1. Prerequisites
-- **Node.js** (v18.0.0 or v20.x+) — [Download Node.js](https://nodejs.org/)
-- **npm** (bundled with Node.js) or **pnpm** / **yarn**
-- **Python 3.9+** (optional, required only for screenshot automation)
+### Prerequisites
 
----
+| Requirement | Version | Notes |
+| :--- | :--- | :--- |
+| **Node.js** | v18.0+ or v20.x+ | [Download](https://nodejs.org/) |
+| **npm** | Bundled with Node.js | Or use pnpm / yarn |
+| **Python** | 3.9+ | Optional — only for screenshot automation |
 
-### 2. Installation Steps
+<br />
 
-#### Step 1: Clone the Repository
+### Step 1 - Clone the Repository
+
 ```bash
 git clone https://github.com/Bavly-Hamdy/gitarmor-ai.git
 cd gitarmor-ai
 ```
 
-#### Step 2: Install Node Dependencies
+### Step 2 - Install Dependencies
+
 ```bash
 npm install
 ```
 
-#### Step 3: Configure Environment Variables
-Create your local `.env` configuration file:
+### Step 3 - Configure Environment Variables
 
 ```bash
-# On Linux / macOS / Git Bash:
+# Linux / macOS / Git Bash
 cp .env.example .env
 
-# On Windows (PowerShell):
+# Windows (PowerShell)
 Copy-Item .env.example .env
 ```
 
-Add your **Google Gemini API Key** (obtain a free key from [Google AI Studio](https://aistudio.google.com/)):
+Open `.env` and add your **Gemini API Key** (free from [Google AI Studio](https://aistudio.google.com/)):
+
 ```env
 GEMINI_API_KEY="your-gemini-api-key-here"
 PORT=3000
 ```
-> *Note: GitArmor AI is offline-resilient! If no Gemini API key is configured, the platform activates deterministic heuristic scanning to ensure local functionality.*
 
-#### Step 4: Run the Development Server
+> **Offline Resilience:** If no Gemini API key is configured, GitArmor activates its deterministic heuristic scanning engine automatically. The platform remains fully functional without network access.
+
+### Step 4 - Start the Development Server
+
 ```bash
 npm run dev
 ```
-The server will boot on `http://localhost:3000`.
 
-#### Step 5: Build for Production
+The full-stack development server boots at `http://localhost:3000`.
+
+### Step 5 - Build for Production
+
 ```bash
 npm run build
 ```
 
----
-
-### 3. Screenshot Capture Automation
-To capture fresh, high-resolution Retina screenshots of all application views:
-```bash
-python capture_screenshots.py
-```
-Outputs pixel-perfect images directly to `public/screenshots/`.
+The optimized production bundle is written to `dist/`.
 
 ---
 
-## 📡 API Reference & System Endpoints
+## Environment Variables Reference
+
+| Variable | Required | Default | Description |
+| :--- | :---: | :--- | :--- |
+| `GEMINI_API_KEY` | Recommended | _(none)_ | Google Gemini 2.5 Flash API key. Falls back to heuristic engine if absent. |
+| `PORT` | No | `3000` | HTTP server port |
+| `GITHUB_TOKEN` | Optional | _(none)_ | GitHub Personal Access Token — enables private repo access & PR dispatch |
+| `FIRESTORE_PROJECT_ID` | Optional | _(none)_ | Google Cloud Firestore project ID. Falls back to local JSON if absent. |
+| `NODE_ENV` | No | `development` | Set to `production` for the production build |
+
+---
+
+## API Reference & System Endpoints
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
-| `POST` | `/api/audit` | Triggers a real-time security audit for a public or private GitHub repository |
+| `POST` | `/api/audit` | Triggers a real-time security audit for a GitHub repository |
 | `GET` | `/api/scans/:id` | Retrieves complete scan results, score breakdown, and findings list |
 | `POST` | `/api/remediate/pr` | Dispatches an autonomous Pull Request with surgical patch to GitHub |
 | `GET` | `/api/github/repos` | Searches and autocompletes GitHub repositories for connected tokens |
@@ -367,30 +427,97 @@ Outputs pixel-perfect images directly to `public/screenshots/`.
 
 ---
 
-## 🤝 Contributing & Open-Source Policy
+## Screenshot Automation
 
-GitArmor AI is an open-source community effort. We welcome contributions from developers, security researchers, and DevSecOps practitioners:
+To generate fresh, high-resolution Retina-quality screenshots of all application views:
 
-1. **Fork the Repository** on GitHub.
-2. **Create a Feature Branch**: `git checkout -b feature/advanced-cwe-detector`.
-3. **Commit Your Changes**: Follow conventional commits (`git commit -m "feat: add AST rule for prototype pollution"`).
-4. **Push to Your Branch**: `git push origin feature/advanced-cwe-detector`.
-5. **Open a Pull Request**: Submit your PR with detailed reproduction steps and test coverage.
+```bash
+# Install Playwright browser runtime (first-time only)
+pip install playwright
+playwright install chromium
+
+# Capture all application views
+python capture_screenshots.py
+```
+
+Screenshots are written directly to `public/screenshots/` as pixel-perfect `.png` files.
 
 ---
 
-## 📄 License
+## Contributing & Open-Source Policy
 
-This project is licensed under the **MIT License** — feel free to use, modify, and distribute it for personal, commercial, or enterprise applications without restrictions.
+GitArmor AI is a community-driven open-source effort. Contributions from developers, security researchers, and DevSecOps practitioners are welcome.
+
+### How to Contribute
+
+1. **Fork the Repository** on GitHub.
+2. **Create a Feature Branch**
+   ```bash
+   git checkout -b feature/advanced-cwe-detector
+   ```
+3. **Commit Your Changes** using conventional commits:
+   ```bash
+   git commit -m "feat: add AST rule for prototype pollution (CWE-1321)"
+   ```
+4. **Push to Your Fork**
+   ```bash
+   git push origin feature/advanced-cwe-detector
+   ```
+5. **Open a Pull Request** with a detailed description, reproduction steps, and test coverage.
+
+### Contribution Guidelines
+
+- All new security detection rules must include test fixtures for both vulnerable and safe patterns.
+- Code must be fully typed with TypeScript strict mode — no `any` shortcuts.
+- UI contributions must support both dark and light mode.
+- Follow the existing minimalist humanized design language.
+
+---
+
+## License
+
+```
+MIT License
+
+Copyright (c) 2025 Bavly Hamdy
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+See the full [LICENSE](LICENSE) file for details.
 
 ---
 
 <div align="center">
 
-**GitArmor AI** — *Empowering developers to write bulletproof code autonomously.*
+<br />
 
-Crafted with ❤️ by **[Bavly Hamdy](https://github.com/Bavly-Hamdy)** & the Open-Source Community.
+**GitArmor AI** &mdash; *Empowering developers to ship bulletproof code, autonomously.*
+
+<br />
+
+Crafted with precision by **[Bavly Hamdy](https://github.com/Bavly-Hamdy)** & the open-source community.
+
+<br />
+
+[![Star on GitHub](https://img.shields.io/github/stars/Bavly-Hamdy/gitarmor-ai?style=social)](https://github.com/Bavly-Hamdy/gitarmor-ai)
+
+<br />
 
 </div>
-#   G i t A r m o r A I  
- 

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="5" y1="2.5" x2="27" y2="29.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+    <linearGradient id="gitStroke" x1="11" y1="9" x2="21" y2="23" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="5" y1="2.5" x2="27" y2="29.8" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3f3f46" />
+      <stop offset="50%" stop-color="#27272a" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Shield Bastion -->
+  <path
+    d="M16 2.5 L27 7.2 V15.5 C27 22.8 22.2 27.6 16 29.8 C9.8 27.6 5 22.8 5 15.5 V7.2 Z"
+    fill="url(#shieldGrad)"
+    stroke="url(#borderGrad)"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Inner Defense Bevel Line -->
+  <path
+    d="M16 4.8 L24.5 8.5 V15.2 C24.5 21.2 20.6 25.4 16 27.2 C11.4 25.4 7.5 21.2 7.5 15.2 V8.5 Z"
+    fill="none"
+    stroke="#27272a"
+    stroke-width="0.75"
+    stroke-opacity="0.6"
+  />
+
+  <!-- Git Branching Security Pipeline -->
+  <!-- Left Path -->
+  <path
+    d="M16 9.5 C16 13 11 13 11 16 C11 19 16 19 16 22.5"
+    stroke="url(#gitStroke)"
+    stroke-width="1.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Right Path -->
+  <path
+    d="M16 9.5 C16 13 21 13 21 16 C21 19 16 19 16 22.5"
+    stroke="url(#gitStroke)"
+    stroke-width="1.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Branch Commit Nodes -->
+  <!-- Top Node (Source) -->
+  <circle cx="16" cy="9.5" r="2.2" fill="#09090b" stroke="#10b981" stroke-width="1.5" />
+  
+  <!-- Left Node (Analysis Branch) -->
+  <circle cx="11" cy="16" r="2.2" fill="#09090b" stroke="#34d399" stroke-width="1.5" />
+  
+  <!-- Right Node (Remediation PR Branch) -->
+  <circle cx="21" cy="16" r="2.2" fill="#09090b" stroke="#34d399" stroke-width="1.5" />
+  
+  <!-- Bottom Node (Merged Secure Baseline) -->
+  <circle cx="16" cy="22.5" r="2.2" fill="#10b981" stroke="#09090b" stroke-width="1" />
+
+  <!-- Center AI Core Synthesis Spark -->
+  <path
+    d="M16 13.8 L17.5 16 L16 18.2 L14.5 16 Z"
+    fill="#ffffff"
+    stroke="#10b981"
+    stroke-width="0.5"
+  />
+</svg>
