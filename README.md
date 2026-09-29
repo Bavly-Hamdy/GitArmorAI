@@ -508,15 +508,39 @@ See the full [LICENSE](LICENSE) file for details.
 
 <br />
 
+---
+
+<br />
+
+<img src="https://github.com/Bavly-Hamdy.png" alt="Bavly Hamdy" width="80" height="80" style="border-radius:50%;border:3px solid #6366f1;" />
+
+<br />
+
+### Built by [Bavly Hamdy](https://github.com/Bavly-Hamdy)
+
+**Full-Stack Developer · DevSecOps Enthusiast · Open-Source Builder**
+
+<br />
+
+[![GitHub](https://img.shields.io/badge/GitHub-Bavly--Hamdy-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Bavly-Hamdy)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/bavly-hamdy)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-6366f1?style=flat-square&logo=vercel&logoColor=white)](https://github.com/Bavly-Hamdy)
+
+<br />
+
 **GitArmor AI** &mdash; *Empowering developers to ship bulletproof code, autonomously.*
 
 <br />
 
-Crafted with precision by **[Bavly Hamdy](https://github.com/Bavly-Hamdy)** & the open-source community.
+[![Star on GitHub](https://img.shields.io/github/stars/Bavly-Hamdy/GitArmorAI?style=social)](https://github.com/Bavly-Hamdy/GitArmorAI)
+&nbsp;&nbsp;
+[![Fork](https://img.shields.io/github/forks/Bavly-Hamdy/GitArmorAI?style=social)](https://github.com/Bavly-Hamdy/GitArmorAI/fork)
+&nbsp;&nbsp;
+[![Watch](https://img.shields.io/github/watchers/Bavly-Hamdy/GitArmorAI?style=social)](https://github.com/Bavly-Hamdy/GitArmorAI)
 
 <br />
 
-[![Star on GitHub](https://img.shields.io/github/stars/Bavly-Hamdy/gitarmor-ai?style=social)](https://github.com/Bavly-Hamdy/gitarmor-ai)
+*If GitArmor AI helped you, consider giving it a ⭐ — it means a lot!*
 
 <br />
 
